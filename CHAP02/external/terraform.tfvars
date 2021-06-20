@@ -1,3 +1,3 @@
 application_name    = "myappdemo"
-environment_name    = "Production"
-country_code        = "fr"
+environment_name    = "Development"
+country_code        = "us"

@@ -6,7 +6,7 @@ $json = ConvertFrom-Json $jsonpayload
 $environment = $json.environment
 
 if($environment -eq "Production"){
-    $location="westeurope"
+    $location="eastus"
 }else{
     $location="westus"
 }

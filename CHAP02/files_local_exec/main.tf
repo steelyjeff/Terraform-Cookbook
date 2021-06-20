@@ -1,6 +1,6 @@
 resource "local_file" "myfile" {
   content  = "This is my text"
-  filename = "../mytextfile.txt"
+  filename = "./mytextfile.txt"
 }
 
 resource "null_resource" "readcontentfile" {
@@ -10,7 +10,7 @@ resource "null_resource" "readcontentfile" {
   }
 
   provisioner "local-exec" {
-    command = "Get-Content -Path ../mytextfile.txt" 
+    command = "Get-Content -Path ./mytextfile.txt" 
 
     interpreter = ["PowerShell", "-Command"]
   }

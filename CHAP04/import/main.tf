@@ -9,5 +9,5 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "rg-app" {
   name     = "RG-APP-IMPORT"
-  location = "westeurope"
+  location = "eastus"
 }

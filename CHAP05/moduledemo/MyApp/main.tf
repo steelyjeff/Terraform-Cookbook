@@ -9,13 +9,13 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "rg-app" {
   name     = "RG_MyAPP_Demo"
-  location = "West Europe"
+  location = "East US"
 }
 
 module "webapp" {
   source               = "../Modules/webapp"
   service_plan_name    = "spmyapp"
-  app_name             = "myappdemobook"
+  app_name             = "myappdemobook1234"
   location             = azurerm_resource_group.rg-app.location
   resource_group_name = azurerm_resource_group.rg-app.name
 }
